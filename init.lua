@@ -134,7 +134,7 @@ later(function()
 	})
 	-- Possible to immediately execute code which depends on the added plugin
 	require("nvim-treesitter.configs").setup({
-		ensure_installed = { "lua", "vimdoc" },
+		ensure_installed = { "lua", "vimdoc", "bash", "c", "lua", "json", "ruby" },
 		highlight = { enable = true },
 	})
 end)
@@ -334,3 +334,7 @@ now(function()
 		require("conform").format({ async = true, lsp_format = "fallback" })
 	end, { desc = "Format buffer" })
 end)
+
+-- LSP
+
+vim.lsp.enable("lua-language-server")
