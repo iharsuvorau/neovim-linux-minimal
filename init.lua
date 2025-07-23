@@ -42,6 +42,8 @@ later(function() require('mini.jump').setup() end)
 later(function() require('mini.surround').setup() end)
 later(function() require('mini.comment').setup() end)
 later(function() require('mini.indentscope').setup() end)
+later(function() require('mini.pairs').setup() end)
+later(function() require('mini.completion').setup() end)
 later(function() 
   require('mini.pick').setup() 
 
