@@ -91,7 +91,7 @@ now(function()
 		"stylua",
 		"lua-language-server",
 		"ruby-lsp",
-		"rubyfmt",
+		"rubocop",
 		"gopls",
 	}
 
@@ -322,6 +322,7 @@ now(function()
 			lua = { "stylua" },
 			go = { "goimports", "gofmt" },
 			rust = { "rustfmt", lsp_format = "fallback" },
+			ruby = { "rubocop" },
 			["_"] = { "trim_whitespace" },
 		},
 		format_on_save = {
@@ -338,3 +339,4 @@ end)
 -- LSP
 
 vim.lsp.enable("lua-language-server")
+vim.lsp.enable("ruby-lsp")
