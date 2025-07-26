@@ -90,8 +90,11 @@ now(function()
 	local ensure_installed = {
 		"stylua",
 		"lua-language-server",
+		"emmet-language-server",
 		"ruby-lsp",
 		"rubocop",
+		"erb-formatter",
+		"erb-lint",
 		"gopls",
 	}
 
@@ -339,4 +342,5 @@ end)
 -- LSP
 
 vim.lsp.enable("lua-language-server")
+vim.lsp.enable("emmet-language-server")
 vim.lsp.enable("ruby-lsp")
